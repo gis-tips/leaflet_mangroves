@@ -757,7 +757,7 @@ function fnc_project_color(values, context) {
 
 
 
-function exp_label_mangroves_1_eval_expression(context) {
+function exp_label_mangroves_2_eval_expression(context) {
     // rtrim(location, 'mangrove')
 
     var feature = context.feature;

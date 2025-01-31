@@ -171,13 +171,8 @@
                     feature: feature,
                     variables: {}
                 };
-                var icon = L.icon({
-                    iconUrl: 'img/mangrove.png',
-                    iconSize: [32, 32], // アイコンサイズ
-                    iconAnchor: [16, 32], // アンカー位置
-                    popupAnchor: [0, -32] // ポップアップ位置
-                });
-                return L.marker(latlng, { icon: icon });            },
+                return L.circleMarker(latlng, style_mangroves_2_0(feature));
+            },
         });
         bounds_group.addLayer(layer_mangroves_2);
         map.addLayer(layer_mangroves_2);
